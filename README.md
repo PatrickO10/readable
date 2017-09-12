@@ -1,2 +1,2 @@
-# readable
+# Readable
 React Readable App
