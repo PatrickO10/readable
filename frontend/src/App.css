@@ -9,9 +9,11 @@
 
 .App-header {
     background-color: #222;
-    height: 150px;
-    padding: 20px;
+    height: auto;
+    padding: 2%;
     color: white;
+    flex: 1 100%;
+    text-align: center;
 }
 
 .App-intro {
@@ -27,12 +29,44 @@
     }
 }
 
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
 .post-card {
-    width: 320px;
-    padding: 2em;
     border: 1px solid black;
+    flex: 1;
+    padding: 1em;
+    margin: 1em;
 }
 
 li {
     list-style-type: none;
+}
+
+
+/*  Sources:
+ *  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+ *  https://css-tricks.com/dont-overthink-flexbox-grids/
+ */
+
+
+/* Medium screens */
+
+@media all and (max-width: 800px) {}
+
+
+/* Small screens */
+
+@media all and (max-width: 500px) {
+    .container {
+        flex-direction: column;
+        flex: 1 1 auto;
+    }
+    .post-card {
+        margin: 0.5em;
+        padding: 0 0.5em;
+    }
 }

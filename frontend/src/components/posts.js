@@ -4,7 +4,7 @@ import { link } from 'react-router-dom'
 class Posts extends React.Component {
     render() {
         return (
-            <div>
+            <div className="container">
             <div className="post-card">
 				<h1> Hello Posts!</h1>
 				<ul>
